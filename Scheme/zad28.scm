@@ -1,4 +1,5 @@
-; a) Please define a function (make-konto balance) generating an account with balance dollars. The following operations should be possible: withdraw money, deposit money and checking balance
+; a) Please define a function (make-konto balance) generating an account with balance dollars. 
+; The following operations should be possible: withdraw money, deposit money and checking balance
 
 (define (make-konto balance)
   

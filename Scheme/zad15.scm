@@ -7,11 +7,10 @@
 
 (define (double n) (+ n n))
 
+; how it works:
 
------------------------------
-
-((comb square double) 5)
-(square (double 5))
-(square (10))
-(square 10)
-100
+; ((comb square double) 5)
+; (square (double 5))
+; (square (10))
+; (square 10)
+; 100

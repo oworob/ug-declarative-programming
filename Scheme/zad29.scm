@@ -1,4 +1,5 @@
-; Please define a function (counting-version f), where f is a one-argument function. Its value is a one-argument function, which - computes f and - counts how often f is called.
+; Please define a function (counting-version f), where f is a one-argument function. 
+; Its value is a one-argument function, which - computes f and - counts how often f is called.
 
 (define (counting-version f)
 

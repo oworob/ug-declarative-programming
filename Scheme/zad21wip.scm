@@ -3,3 +3,5 @@
 ; values is a list of variables together with their corresponding boolean value.
 
 (define values '((x . #f) (y . #t) (z . #f)))
+
+; ¯\_(ツ)_/¯

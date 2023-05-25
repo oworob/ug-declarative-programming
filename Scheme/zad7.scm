@@ -10,17 +10,17 @@
 
 (fibonacci_rec 4)
 
----- how it works:
+; how it works:
 
-(fibonacci_rec 4)
-(+ (fibonacci_rec 3) (fibonacci_rec 2))
-(+ (+ (fibonacci_rec 2) (fibonacci_rec 1)) (+ (fibonacci_rec 1) (fibonacci_rec 0)))
-(+ (+ (+ (fibonacci_rec 1) (fibonacci_rec 0)) (fibonacci_rec 1)) (+ (fibonacci_rec 1) (fibonacci_rec 0)))
-(+ (+ (+ 1 0) 1) (+ 1 0))
-(+ (+ 1 1) 1)
-(+ (+ 1 1) 1)
-(+ 2 1)
-3
+; (fibonacci_rec 4)
+; (+ (fibonacci_rec 3) (fibonacci_rec 2))
+; (+ (+ (fibonacci_rec 2) (fibonacci_rec 1)) (+ (fibonacci_rec 1) (fibonacci_rec 0)))
+; (+ (+ (+ (fibonacci_rec 1) (fibonacci_rec 0)) (fibonacci_rec 1)) (+ (fibonacci_rec 1) (fibonacci_rec 0)))
+; (+ (+ (+ 1 0) 1) (+ 1 0))
+; (+ (+ 1 1) 1)
+; (+ (+ 1 1) 1)
+; (+ 2 1)
+; 3
 
 
 
@@ -33,11 +33,11 @@
 
 (fibonacci_acc 4 0 1)
 
----- how it works:
+; how it works:
 
-(fibonacci_acc 4 0 1)
-(fibonacci_acc 3 1 0)
-(fibonacci_acc 2 1 1)
-(fibonacci_acc 1 2 1)
-(fibonacci_acc 0 1 3)
-3
+; (fibonacci_acc 4 0 1)
+; (fibonacci_acc 3 1 0)
+; (fibonacci_acc 2 1 1)
+; (fibonacci_acc 1 2 1)
+; (fibonacci_acc 0 1 3)
+; 3
