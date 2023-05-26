@@ -26,4 +26,15 @@ maxtree(node(H,nil,nil),X) :- X >= H.
 maxtree(node(H,L,R),X) :- X >= H, maxtree(L,X), maxtree(R,X).
 % true nawet jeżeli elementu nie ma w drzewie ¯\_(ツ)_/¯
 
-% d) 
+% d) times(N,T1,T2), which is fulfilled if D2 is the tree D1 in which each element has been multiplied with N.
+
+times(_,nil,nil).
+times(N,node(H1,L1,R1),node(H2,L2,R2)) :- H2 is H1*N, times(N,L1,L2), times(N,R1,R2).
+
+% e) preorder(T,L), which is fulfilled if L is the list of T's elements in preorder.
+
+preorder(nil, []).
+preorder(node(H, L, R), [H|T]) :-
+    preorder(L, Left),
+    preorder(R, Right),
+    append(Left, Right, T).
