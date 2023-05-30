@@ -27,5 +27,4 @@ mymerge([],B,B).
 mymerge([A|Ra],[B|Rb],[A|M]) :-  A =< B, mymerge(Ra,[B|Rb],M).
 mymerge([A|Ra],[B|Rb],[B|M]) :-  A > B,  mymerge([A|Ra],Rb,M).
  
-% ?- mergesort([4,3,6,5,9,1,7],S).
-% S=[1,3,4,5,6,7,9]
+% ?- mergesort([4,3,6,5,9,1,7],S). -> S=[1,3,4,5,6,7,9]
